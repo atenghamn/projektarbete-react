@@ -1,0 +1,22 @@
+.description{
+    font-size: larger;
+    width: 60rem;
+    text-align: justify;
+    color:darksalmon
+}
+
+.header {
+    font-size: 600%;
+    color: whitesmoke;
+    margin-bottom: 1rem;   
+}
+
+
+.ubiSunt-bg {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:darkolivegreen;
+    height: 40rem;
+}

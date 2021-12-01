@@ -1,7 +1,7 @@
 
 
 
-const ImageView = ({img}) => {
+const ImageView = ({img, description}) => {
 
 
 
