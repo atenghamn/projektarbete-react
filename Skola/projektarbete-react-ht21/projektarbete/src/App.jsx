@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import WeatherGuide from './Components/Sections/WeatherGuide';
 
 function App() {
   return (
     <div className="App">
-      <div>Hej!</div>
+    
+      <WeatherGuide/>
     </div>
   );
 }
