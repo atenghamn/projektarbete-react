@@ -16,7 +16,7 @@ import imageNine from "./Components/Images/_S1A8116.jpg";
 import ImageViewSmall from './Components/Common/ImageViewSmall';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Gallery from './Components/Sections/Gallery';
 
 function App() {
 
@@ -41,11 +41,13 @@ function App() {
       <Hero/>
       <Ubisunt/>
 
-      <div className="thumbs">
+     {/*  <div className="thumbs">
         {(images.map(image => (
           <ImageViewSmall img={image.img}/>
         )))}
       </div>
+ */}
+        <Gallery images={images}/>
 
       <WeatherGuide/>
 
