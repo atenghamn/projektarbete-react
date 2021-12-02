@@ -7,7 +7,9 @@
 
 .thumbs {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     margin-top: 4rem;
     height: 2080px;
     }
@@ -18,3 +20,23 @@
     margin: 1rem;
     border: 5px solid whitesmoke;
     }
+
+
+.g-title {
+    font-size: 600%;
+    background-color: rgb(22, 26, 26);
+    color:whitesmoke;
+    margin-bottom: -1rem;
+    padding: 9rem;
+}
+
+.background{
+    background-color: rgb(22, 26, 26);
+    color:whitesmoke;
+    margin-bottom: -1rem;
+    padding-bottom: 6rem;
+}
+
+.btn-warning{
+    color: whitesmoke;
+}

@@ -13,7 +13,6 @@ import imageSix from "./Components/Images/_DSF8929.jpg";
 import imageSeven from "./Components/Images/_S1A1981.jpg";
 import imageEight from "./Components/Images/_S1A4762.jpg";
 import imageNine from "./Components/Images/_S1A8116.jpg";
-import ImageViewSmall from './Components/Common/ImageViewSmall';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './Components/Sections/Gallery';
@@ -22,15 +21,15 @@ function App() {
 
 
   const [images, setImages] = useState([
-    {img: imageOne, description: "Test"},
-    {img: imageTwo, description: "Test"},
-    {img: imageThree, description: "Test"},
-    {img: imageFour, description: "Test"},
-    {img: imageFive, description: "Test"},
-    {img: imageSix, description: "Test"},
-    {img: imageSeven, description: "Test"}, 
-    {img: imageEight, description: "Test"},
-    {img: imageNine, description: "Test"}
+    {img: imageOne, caption: "Test"},
+    {img: imageTwo, caption: "Test"},
+    {img: imageThree, caption: "Test"},
+    {img: imageFour, caption: "Test"},
+    {img: imageFive, caption: "Test"},
+    {img: imageSix, caption: "Test"},
+    {img: imageSeven, caption: "Test"}, 
+    {img: imageEight, caption: "Test"},
+    {img: imageNine, caption: "Test"}
   ]);
 
 
@@ -41,13 +40,7 @@ function App() {
       <Hero/>
       <Ubisunt/>
 
-     {/*  <div className="thumbs">
-        {(images.map(image => (
-          <ImageViewSmall img={image.img}/>
-        )))}
-      </div>
- */}
-        <Gallery images={images}/>
+      <Gallery images={images}/>
 
       <WeatherGuide/>
 
