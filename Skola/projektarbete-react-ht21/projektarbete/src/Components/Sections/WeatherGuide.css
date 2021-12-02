@@ -1,0 +1,24 @@
+.weatherguide-bg {
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(87, 43, 17);
+    height: 40rem;
+    color: whitesmoke;
+}
+
+h1 {
+    
+    font-size: 600%;
+}
+
+.call{
+    margin-top: -2rem;
+    font-size: 125%;
+}
+
+.wStation{
+    margin-top: 4rem;
+}

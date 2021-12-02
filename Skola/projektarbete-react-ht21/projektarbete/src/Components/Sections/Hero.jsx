@@ -1,13 +1,11 @@
+import React from 'react';
+
 import "./Hero.css"
-import heroImage from "./../Images/_dsf5999.jpg"
 
 
 const Hero = () => {
 
     
-
-
-
     return(
         <div>
             {/* <img src={`${heroImage}`} alt="Hero" className="heroImage" /> */}
