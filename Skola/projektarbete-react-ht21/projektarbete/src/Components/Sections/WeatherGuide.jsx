@@ -4,6 +4,7 @@ import "./WeatherGuide.css"
 
 
 
+
 const WeatherGuide = () => {
 
     const [city, setCity] = useState([]);
@@ -28,7 +29,8 @@ const WeatherGuide = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const city = String(e.target[0].value);
-        setNewCity(city);        
+        setNewCity(city);
+        resetSearch();        
     }
 
     const resetSearch = ()=>{
@@ -39,7 +41,7 @@ const WeatherGuide = () => {
     return (
         <div className="weatherguide-bg">
 
-            <h1 className="wg-title">NOW LEAVE</h1>
+            <h1 className="display-1">NOW LEAVE</h1>
             <p className="call">With all said and done it is time to go out and make something for yourself. Make an image, do whatever but go do it! To get you going you
             can search for a city below.</p>
             {city.name != undefined &&
@@ -48,15 +50,14 @@ const WeatherGuide = () => {
                 <p>You will make your next image in {city.name} where the temperature is {city.main.temp} degrees. Even tough it feels like {city.main.feels_like} degrees.</p>
                 <p>Today it's gonna be {city.weather[0].main.toLowerCase()} or to be precise, {city.weather[0].description}</p>
                 <p>Wind speed in {city.name} is {city.wind.speed} an the humidity is currently {city.main.humidity}%</p>
-                <h3>With that said... I hope you make an image today!</h3>
+                <h4>With that said... I hope you make an image today!</h4>
             </div>
             }     
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form">
                 <label>
-                    <span>Enter City </span>
-                    <input type="text"  onChange={(e) => setPlaceHolder(e.target.value)} value={placeHolder} />
+                    <input type="text"  onChange={(e) => setPlaceHolder(e.target.value)} value={placeHolder} className="form-control" />
                 </label>
-                <button>Get a new city!</button>  
+                <button className="btn btn-warning">Get a new city!</button>  
             </form>
            
         </div>

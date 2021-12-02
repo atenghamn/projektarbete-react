@@ -9,16 +9,16 @@
     color: whitesmoke;
 }
 
-h1 {
-    
-    font-size: 600%;
-}
-
 .call{
-    margin-top: -2rem;
+   
     font-size: 125%;
 }
 
 .wStation{
     margin-top: 4rem;
 }
+
+.form {
+    margin-top: 2rem;
+}
+

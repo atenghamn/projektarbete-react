@@ -14,6 +14,8 @@ import imageSeven from "./Components/Images/_S1A1981.jpg";
 import imageEight from "./Components/Images/_S1A4762.jpg";
 import imageNine from "./Components/Images/_S1A8116.jpg";
 import ImageViewSmall from './Components/Common/ImageViewSmall';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
