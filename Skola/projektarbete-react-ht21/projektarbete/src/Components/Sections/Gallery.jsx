@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Gallery.css"
 import { SRLWrapper } from "simple-react-lightbox";
+import Links from "../Common/Links";
 
 
 const Gallery = ({images}) => {
@@ -20,6 +21,7 @@ const Gallery = ({images}) => {
           </div>
 
       </div>
+       <Links></Links>
      </div>
       </SRLWrapper>
     );

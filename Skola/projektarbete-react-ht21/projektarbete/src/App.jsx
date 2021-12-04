@@ -13,15 +13,24 @@ import imageSix from "./Components/Images/_DSF8929.jpg";
 import imageSeven from "./Components/Images/_S1A1981.jpg";
 import imageEight from "./Components/Images/_S1A4762.jpg";
 import imageNine from "./Components/Images/_S1A8116.jpg";
+import imageTen from "./Components/Images/_DSF8438.jpg";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './Components/Sections/Gallery';
+import Reflections from './Components/Sections/Reflections';
+import  {
+  BrowserRouter as Router,
+  Routes,
+  Route, 
+  Link
+} from "react-router-dom";
+
 
 function App() {
 
 
   const [images, setImages] = useState([
-    {img: imageOne, caption: "Test"},
+    {img: imageTen, caption: "Test"},
     {img: imageTwo, caption: "Test"},
     {img: imageThree, caption: "Test"},
     {img: imageFour, caption: "Test"},
@@ -36,6 +45,15 @@ function App() {
 
   return (
     <div className="App">
+
+<nav>
+          <Link to="/">Home</Link>
+          <Link to="./Components/Sections/Reflections">Reflections</Link>
+        </nav>
+      <Routes>
+        <Route path="Home"  element={<App />}/>
+        <Route path="Reflections" element={<Reflections images={images}/>} />
+    </Routes>
       
       <Hero/>
       <Ubisunt/>
