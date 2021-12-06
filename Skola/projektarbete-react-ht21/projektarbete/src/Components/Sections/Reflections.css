@@ -1,0 +1,27 @@
+.ref-bg{
+    margin-top: -1rem;
+    background-color: darkslategray;
+}
+
+.smlOnes{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgContainer {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+    margin-top: -1rem;
+    color: whitesmoke;
+}
+
+
+.refTitle{
+    font-size: 600%;
+    color: whitesmoke;
+    padding-top: 15rem;
+}

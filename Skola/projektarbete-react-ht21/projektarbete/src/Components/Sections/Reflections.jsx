@@ -1,24 +1,25 @@
 import React, { Component } from "react";
+import ImageView from "../Common/ImageView";
+import "./Reflections.css";
 
 
-const Reflections = ({images, children}) => {
 
-console.log("KOmmer jag hit?");
-
+const Reflections = ({images}) => {
 
     return (
-        <div>
+        <div className="ref-bg"> 
           
+            <div className="smlOnes">
+              <h1 className="refTitle">REFLECTIONS</h1>
+              {(images.map(image => (
 
-            <div className="thumbs">
-            {(images.map(image => (
-              <img src={image.img} className="imgSmll"/>
-              
-            )))}
+                <div className="imgContainer">
+
+                <ImageView img={image} ></ImageView>
+                </div>
+                
+              )))}
           </div>
-
-
-
 
         </div>
     )

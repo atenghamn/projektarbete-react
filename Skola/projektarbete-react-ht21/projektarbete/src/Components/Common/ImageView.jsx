@@ -1,14 +1,14 @@
 import "./ImageView.css";
+import React from "react";
 
-
-const ImageView = ({img, description}) => {
+const ImageView = ({img}) => {
 
 
 
     return (
         <div className="image-bg">
-            <img src={img} alt="picture" className="bigImage"/>
-            <p className="image-des">{description}</p>
+            <img src={img.img} alt="picture" className="bigImage"/>
+            <p className="image-des">{img.caption}</p>
 
         </div>
     );

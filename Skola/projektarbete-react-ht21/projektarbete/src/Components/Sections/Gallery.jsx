@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Gallery.css"
 import { SRLWrapper } from "simple-react-lightbox";
 
