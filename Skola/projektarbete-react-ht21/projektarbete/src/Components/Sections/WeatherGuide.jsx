@@ -44,7 +44,7 @@ const WeatherGuide = () => {
             <h1 className="display-1">NOW LEAVE</h1>
             <p className="call">With all said and done it is time to go out and make something for yourself. Make an image, do whatever but go do it! To get you going you
             can search for a city below.</p>
-            {city.name != undefined &&
+            {city.name !== undefined &&
 
             <div className="wStation">
                 <p>You will make your next image in {city.name} where the temperature is {city.main.temp} degrees. Even tough it feels like {city.main.feels_like} degrees.</p>

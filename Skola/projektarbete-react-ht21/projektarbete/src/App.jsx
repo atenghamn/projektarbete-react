@@ -30,15 +30,15 @@ function App() {
 
 
   const [images, setImages] = useState([
-    {img: imageTen, caption: "Test"},
-    {img: imageTwo, caption: "Test"},
-    {img: imageThree, caption: "Test"},
-    {img: imageFour, caption: "Test"},
-    {img: imageFive, caption: "Test"},
-    {img: imageSix, caption: "Test"},
-    {img: imageSeven, caption: "Test"}, 
-    {img: imageEight, caption: "Test"},
-    {img: imageNine, caption: "Test"}
+    {img: imageTen, caption: "In the middle of rush hour we had to get these photos for an upcomming theatershow. I was on parental leave but the job sounded to fun to pass down. While I directed the two actors wiht hoods over their heads, my then 1-yeard old daughter, played in the bakcground. A lot of people walked by. Nobody said anything."},
+    {img: imageTwo, caption: "While driving back from the Bergman museum in Fårö, Gotland i spotted theese fishing huts. Cliché as fuck..."},
+    {img: imageThree, caption: "I shot alot of actors over the years. It's a bit strange that actors often aren't very good at posing naturaly, instead they often wants direction on how to stand, and look. Sanne, is an amazingly talented actress that been seen in productions like the tv-series Bron.  She's one of few actors that can look sincere in a picture."},
+    {img: imageFour, caption: "Mattias a musician. A harmonica player. I shot this portrait of him a time after losing his son. Theres no more words to be said around this picture."},
+    {img: imageFive, caption: "A personal image. Made for myself. Driving back from my mom, I saw this house that I never seen. Got out, set up, pressed the shutter, drove off. A common ritual."},
+    {img: imageSix, caption: "Jmag's behid everything skateboardrelated in Sweden. Need a skatepard? Call Jmag! I shot a lot of photos of Jmag over the years, a lot of skateboard ads. While shoting this picture we had to carry the barrel from an nearby indutry, Jmag complained that his hands were itching after he carried the barrel. Maybe he's radioactive now..?"},
+    {img: imageSeven, caption: "It's not easy raising children. Especially when you raise a daughter in sexist and often misogynic world. I often listen to the song Rebel Girl by Bikini Kill for some parental guidance. "}, 
+    {img: imageEight, caption: "The only time I photographed north of Stockholm. The whole process of making an image becomes so much slower when it's minus fifteen degrees."},
+    {img: imageNine, caption: "Suddenly evertyhing aligns just perfectly and theres really nothing more to say than that. "}
   ]);
 
 
@@ -46,21 +46,22 @@ function App() {
   return (
     <div className="App">
 
-<nav>
-          <Link to="/">Home</Link>
-          <Link to="./Components/Sections/Reflections">Reflections</Link>
+        <nav>
+          <Link to="/">Chapter 0</Link>
+          <Link to="/ubisunt">Chapter 1</Link>
+          <Link to="/gallery">Chapter 2</Link>
+          <Link to="/reflections">Chapter 3</Link>
+          <Link to="/weather">Chapter 4</Link>
+         
+  
         </nav>
-      <Routes>
-        <Route path="Home"  element={<App />}/>
-        <Route path="Reflections" element={<Reflections images={images}/>} />
-    </Routes>
-      
-      <Hero/>
-      <Ubisunt/>
-
-      <Gallery images={images}/>
-
-      <WeatherGuide/>
+        <Routes>
+          <Route path="/" element={<Hero/>}/>
+          <Route path="/Weather"  element={<WeatherGuide />}/>
+          <Route path="/Reflections" element={ <Reflections images={images}/> } />
+          <Route path="/Ubisunt" element={<Ubisunt />} />
+          <Route path="/Gallery" element={<Gallery images={images}/>}/>
+        </Routes>
 
     </div>
   );

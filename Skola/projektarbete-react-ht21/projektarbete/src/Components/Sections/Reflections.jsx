@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
 
-const Reflections = ({images}) => {
+const Reflections = ({images, children}) => {
 
-
+console.log("KOmmer jag hit?");
 
 
     return (
         <div>
+          
 
             <div className="thumbs">
             {(images.map(image => (
