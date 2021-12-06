@@ -1,5 +1,4 @@
 .ref-bg{
-    margin-top: -1rem;
     background-color: darkslategray;
 }
 
@@ -15,8 +14,7 @@
     flex-direction: column;
     align-items: center;
     background-color: darkslategray;
-    margin-top: -1rem;
-    color: whitesmoke;
+
 }
 
 

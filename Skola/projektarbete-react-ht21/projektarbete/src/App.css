@@ -42,10 +42,10 @@
 .links {
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   position: absolute;
-  margin-left: 30%;
+  padding-left: 25%;
+  
 }
 
 .link{
@@ -54,4 +54,8 @@
   font-size: x-large;
   text-decoration: none;
   
+}
+
+.link:hover{
+  color:dimgray;
 }

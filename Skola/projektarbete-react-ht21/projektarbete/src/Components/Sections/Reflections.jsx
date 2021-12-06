@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ImageView from "../Common/ImageView";
 import "./Reflections.css";
 
@@ -13,9 +13,9 @@ const Reflections = ({images}) => {
               <h1 className="refTitle">REFLECTIONS</h1>
               {(images.map(image => (
 
-                <div className="imgContainer">
+                <div key={image.key} className="imgContainer">
 
-                <ImageView img={image} ></ImageView>
+                <ImageView img={image}></ImageView>
                 </div>
                 
               )))}

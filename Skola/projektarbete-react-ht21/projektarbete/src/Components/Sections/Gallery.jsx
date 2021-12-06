@@ -14,7 +14,7 @@ const Gallery = ({images}) => {
         <div className="gallery-container"> 
           <div className="thumbs">
             {(images.map(image => (
-              <img src={image.img} className="imgSmll"/>
+              <img src={image.img} key={image.key} className="imgSmll" alt=""/>
               
             )))}
           </div>
