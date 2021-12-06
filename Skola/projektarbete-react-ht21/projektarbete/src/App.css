@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:sandybrown;
 }
 
 .App-logo {
@@ -41,3 +42,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   }
+
+
+.links {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 30%;
+}
+
+.link{
+  padding: 2rem;
+  color: whitesmoke;
+  font-size: x-large;
+  text-decoration: none;
+  
+}

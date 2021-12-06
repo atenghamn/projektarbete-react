@@ -46,12 +46,12 @@ function App() {
   return (
     <div className="App">
 
-        <nav>
-          <Link to="/">Chapter 0</Link>
-          <Link to="/ubisunt">Chapter 1</Link>
-          <Link to="/gallery">Chapter 2</Link>
-          <Link to="/reflections">Chapter 3</Link>
-          <Link to="/weather">Chapter 4</Link>
+        <nav className="links">
+          <Link to="/" className="link">Chapter 0</Link>
+          <Link to="/ubisunt" className="link">Chapter 1</Link>
+          <Link to="/gallery" className="link">Chapter 2</Link>
+          <Link to="/reflections" className="link">Chapter 3</Link>
+          <Link to="/weather" className="link">Chapter 4</Link>
          
   
         </nav>
