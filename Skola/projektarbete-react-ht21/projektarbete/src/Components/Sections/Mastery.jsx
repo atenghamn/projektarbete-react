@@ -1,6 +1,6 @@
 import React from "react";
 import "./Mastery.css";
-import { useState, useEffect} from "react";
+import { useState } from "react";
 
 const Mastery = () => {
 
@@ -38,7 +38,7 @@ const Mastery = () => {
        const hoursDivByTenK = 10000/numb;
        const numbYears = hoursDivByTenK / 365;
        const numbDays = hoursDivByTenK % 365
-       setYears(Math.round(numbYears));
+       setYears(Math.trunc(numbYears));
        setDays(Math.round(numbDays));
     }
 
@@ -66,9 +66,9 @@ const Mastery = () => {
 
             <form onSubmit={handleSubmit} className="form">
                 <label>
-                    <input type="text"  onChange={(e) => setPlaceHolder(e.target.value)} value={placeHolder} className="form-control" />
+                    <input type="number"  onChange={(e) => setPlaceHolder(e.target.value)} value={placeHolder} className="form-control" />
                 </label>
-                <button className="btn btn-warning">Submit</button>  
+                <button className="btn btn-dark">Submit</button>  
             </form>
 
 

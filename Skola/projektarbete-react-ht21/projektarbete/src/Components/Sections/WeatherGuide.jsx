@@ -41,7 +41,7 @@ const WeatherGuide = () => {
     return (
         <div className="weatherguide-bg">
 
-            <h1 className="display-1">NOW LEAVE</h1>
+            <h1 className="mTitle">NOW LEAVE</h1>
             <p className="call">With all said and done it is time to go out and make something for yourself. Make an image, do whatever but go do it! To get you going you
             can search for a city below.</p>
             {city.name !== undefined &&
