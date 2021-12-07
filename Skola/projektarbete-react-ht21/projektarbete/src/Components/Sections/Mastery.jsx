@@ -49,11 +49,11 @@ const Mastery = () => {
             <div className="staticText">
                 <h1 className="mTitle">MASTERY</h1>
                 <p className="mDes">What is it you wanna do? Learn to code? Play the flute? Make films?
-                    whatever it is the only way to achive it is to practice. 
+                    Whatever it is the only way to achive it is to practice. 
                     It's said that  we need 10 000 hours to master something. Therefore I 
-                    created this page to help you visualize youre goal. Just enter how many
-                    hours a day you're willing to practice and the computer will calculate
-                    how long it will take for you to reach your goal.
+                    created this to help you visualize your goal. Just enter how many
+                    hours a day you're willing to practice and see
+                    how long it will take you to reach your goal.
                 </p>
             </div>
 
