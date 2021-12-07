@@ -6,20 +6,14 @@ const Mastery = () => {
 
     const [hours, setHours] = useState(0);
     const [days, setDays] = useState(0);
+    const [years, setYears] = useState(0);
     const [placeHolder, setPlaceHolder] = useState("");
 
-
-
-
-    useEffect(()=> {
-      
-    }, [hours, days]);
-
-    
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const hoursADay= e.target[0].value;
+        convertToNumb(hoursADay);
         setHours(hoursADay);
         daysToGo(hoursADay);
         resetSearch();        
@@ -31,12 +25,21 @@ const Mastery = () => {
   
 
     const convertToNumb = (numb) => {
-        // Convert and make sure we cant get text or negative numbers
+        if (isNaN(numb)){
+            alert("Please enter a number");
+        } else if (numb < 0) {
+            alert("Please enter a positive number!");
+        } else if (numb > 24) {
+            alert("Keep it realistic... under 24 hours");
+        }
     }
 
     function daysToGo (numb){
-       const a = 10000/numb;
-       setDays(a);
+       const hoursDivByTenK = 10000/numb;
+       const numbYears = hoursDivByTenK / 365;
+       const numbDays = hoursDivByTenK % 365
+       setYears(Math.round(numbYears));
+       setDays(Math.round(numbDays));
     }
 
 
@@ -57,7 +60,8 @@ const Mastery = () => {
 
             <div className="calculator">
                 <div>If you practice {hours} hours a day</div>
-                <div>It will take you {days} days to master your craft</div>
+
+                <div>It will take you {years} years and {days} days to master your craft</div>
             </div>
 
             <form onSubmit={handleSubmit} className="form">
