@@ -23,6 +23,7 @@ import  {
   Route, 
   Link
 } from "react-router-dom";
+import Mastery from './Components/Sections/Mastery';
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
           <Link to="/ubisunt" className="link">Chapter 1</Link>
           <Link to="/gallery" className="link">Chapter 2</Link>
           <Link to="/reflections" className="link">Chapter 3</Link>
-          <Link to="/weather" className="link">Chapter 4</Link>
+          <Link to="/mastery" className="link">Chapter 4</Link>
+          <Link to="/weather" className="link">Chapter 5</Link>
          
   
         </nav>
@@ -61,6 +63,7 @@ function App() {
           <Route path="/Reflections" element={ <Reflections images={images}/> } />
           <Route path="/Ubisunt" element={<Ubisunt />} />
           <Route path="/Gallery" element={<Gallery images={images}/>}/>
+          <Route path="/Mastery" element={<Mastery />} /> 
         </Routes>
         </div>
     </div>

@@ -1,0 +1,29 @@
+.mastery{
+
+
+    background-color: cadetblue;
+    height: 70rem;
+    color: whitesmoke;
+}
+
+.mTitle{
+    font-size: 600%;
+    color: whitesmoke;
+    padding-top: 15rem;
+}
+
+.mDes{
+    max-width: 1080px;
+
+}
+
+.staticText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    margin-top: 5rem;
+    font-size: x-large;
+}
