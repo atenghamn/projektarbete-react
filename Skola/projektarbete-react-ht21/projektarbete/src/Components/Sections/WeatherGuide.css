@@ -1,9 +1,4 @@
 .weatherguide-bg {
-    border: 1px solid black;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color:rgb(87, 43, 17);
     height: 70rem;
     color: whitesmoke;
