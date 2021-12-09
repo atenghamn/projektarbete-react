@@ -11,6 +11,11 @@
 
 .wStation{
     margin-top: 4rem;
+    font-size: 125%;
+}
+
+.wStation > h4{
+    margin-top: 4rem;
 }
 
 .form {
